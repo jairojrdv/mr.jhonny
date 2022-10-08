@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    /*para retirar o padding e o margin padrão da web*/
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    /*0 e auto para centralzar*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #fff;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    /*para iniciar os itens do fim do começo*/
+    gap: 80px;
+    /*distanciamento entre os itens*/
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+    /*Margem para dentro*/
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    /*Espaço entre os itens com 50% do espaço do cnetro nos lados*/
+    background-color: rgba(133, 13, 13, 1);
+}
+
+.cabecalho {
+    font-size: 30px;
+}
+
+.img {
+    width: 100%;
+    background-color: blue;
+    height: 350px;
+    overflow: hidden;
+    /*Para a imagem não ir além das margens*/
+}
+
+.img img {
+    width: 100%;
+    margin-top: -200px;
+    /*Para a imagem subir */
+}
+
+h1 {
+    text-align: center;
+
+}
+
+main .texto {
+    padding: 30px;
+
+}
+
+.texto ul {
+    list-style-type: none;
+    /*Para o estilo dos itens em lista */
+    display: flex;
+    /*para colocar em linha*/
+    flex-direction: column;
+    /*para direcionar a posição em colunas uma abaixodo outro*/
+    gap: 30px;
+}
+
+li .bio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*Para quebrar linha quando chega no limite de tamanho*/
+}
+
+.bio p {
+    width: 70%;
+    min-width: 400px;
+}
+
+.imgbio {
+    width: 30%;
+    overflow: hidden;
+}
+
+.imgbio img {
+    width: 100%;
+}
